@@ -7,13 +7,14 @@ const BikeList = (props) => {
 
   const bikes = props.bikes
 
+
   return (
     <Section>
       <h1>Bike List</h1>
       {bikes.map((bike) => {
 
         return (
-          <BikeItem>
+          <BikeItem key={Math.random().toString()}>
             <BikeBrand>{bike.brand}</BikeBrand>
             <BikeModel>{bike.model}</BikeModel>
             <BikeSize>{bike.size}</BikeSize>
@@ -40,7 +41,7 @@ const BikeItem = styled.li`
   align-items:center;
   list-style:none;
   background-color:#f6f6f6;
-  margin:5px 0;
+  margin:0 0 10px 0;
   padding:.5rem;
 `
 
