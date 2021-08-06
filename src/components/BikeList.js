@@ -43,6 +43,7 @@ const BikeItem = styled.li`
   background-color:#f6f6f6;
   margin:0 0 10px 0;
   padding:.5rem;
+  flex-wrap:wrap;
 `
 
 const BikeBrand = styled.h2`
